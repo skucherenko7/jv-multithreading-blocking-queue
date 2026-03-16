@@ -4,8 +4,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class BlockingQueue<T> {
-    private Queue<T> queue = new LinkedList<>();
-    private int capacity;
+    final private Queue<T> queue = new LinkedList<>();
+    final private int capacity;
 
     public BlockingQueue(int capacity) {
         this.capacity = capacity;
